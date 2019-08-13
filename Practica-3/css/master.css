@@ -1,0 +1,193 @@
+/* HEADER */
+
+body {
+  background-image: url("../img/bg-2.png");
+}
+
+header {
+  background-color: red;
+  overflow: hidden;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+}
+
+header img {
+  float: left;
+  padding: 10px;
+}
+
+ul.left li,
+ul.right li {
+  float: left;
+}
+
+ul.right {
+  float: right;
+  overflow: hidden;
+}
+
+ul.left {
+  float: left;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-top: 5px;
+}
+
+/* MAIN */
+
+.container {
+  margin: 20px auto 0px;
+  width: 1140px;
+  overflow: hidden;
+}
+
+main {
+  width: 800px;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  background-color: white;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.products {
+  width: 380px;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+.products:nth-child(even){
+  margin-right: 0px;
+}
+.products img {
+  width: 100%;
+}
+
+.products a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* ASIDE */
+aside {
+  width: 320px;
+  float: left;
+  margin-left:10px;
+}
+aside h2 {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 7px;
+  border: solid 1px lightblue;
+}
+
+#h2-top {
+  margin-top: 0px;
+}
+
+.tutorials {
+  background-color: white;
+  overflow: hidden;
+  padding: 5px;
+  border: solid 1px lightblue;
+}
+
+.tutorials a img{
+  float: left;
+}
+
+.tutorials a span {
+  float: left;
+  display: inline-block;
+  width: 180px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.tutorials a span {
+  text-decoration: none;
+  color: black;
+}
+
+.ads {
+  background-color: white;
+  padding: 5px;
+}
+
+.div-ads {
+  border: solid 1px lightblue;
+}
+
+#top-ad {
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
+#down-ad {
+  padding-left: 4px;
+}
+
+
+
+
+
+/* LOG IN */
+
+/* FORM */
+
+.form {
+  width: 350px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.inputs {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.labels {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+#p-reminder {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.texto {
+  color: red;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 30px;
+  border: solid 1px darkblue;
+  border-radius: 8px;
+}

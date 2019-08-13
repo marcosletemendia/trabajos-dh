@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header> <!-- Caja de arriba -->
+      <a class="logo" href="home-craftsy.html"><img src="img/logo.png" alt="Logo"></a>
+      <ul class="left">
+        <li><a href="#">SMARTPHONES</a></li>
+        <li><a href="#">TABLETS</a></li>
+        <li><a href="#">COMPUTADORAS</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href="login-craftsy.html">LOG IN</a></li>
+        <li><a href="registro-craftsy.html">REGISTRO</a></li>
+      </ul>
+    </header>
+    <div class="container registro">
+      <h1>REGISTRATE</h1>
+      <form class="form" action="registro-craftsy.html" method="post">
+        <br>
+        <div class="div">
+          <label class="labels" for="name">Nombre</label>
+          <input class="inputs" type="text" name="name" value="" placeholder="Ingresá tu nombre" required id="name">
+          <small class="texto">Obligatorio</small>
+        </div>
+        <div class="div">
+          <label class="labels" for="email">Email</label>
+          <input class="inputs" type="email" name="email" value="" placeholder="Ingresá tu email" required id="email">
+          <small class="texto">Obligatorio</small>
+        </div>
+        <div class="div">
+          <label class="labels" for="contraseña">Contraseña</label>
+          <input class="inputs" type="password" name="password" value="" placeholder="Ingresá tu contraseña" id="password">
+          <small class="texto">Obligatorio</small>
+        </div>
+        <h2>País de nacimiento</h2>
+        <select class="paises" name="paises" required>
+          <option value="">Por favor elija su país</option>
+          <option value="ar">Argentina</option>
+          <option value="uru">Uruguay</option>
+          <option value="ven">Venezuela</option>
+          <option value="ch" selected>Chile</option>
+        </select>
+        <br>
+        <small class="texto">Obligatorio</small>
+
+        <h2>Género</h2>
+        <input type="radio" name="genero" value="masc" required>Masculino
+        <input type="radio" name="genero" value="fem">Femenino
+        <input type="radio" name="genero" value="x">Prefiero no decirlo
+
+        <h2>Hobbies</h2>
+        <input type="checkbox" name="hobbies" value="guit">Guitarra
+        <input type="checkbox" name="hobbies" value="fut">Fútbol
+        <input type="checkbox" name="hobbies" value="ten">Tenis
+        <input type="checkbox" name="hobbies" value="prog">Programacióna
+
+        <h2>Dejanos tus comentarios</h2>
+        <textarea name="comentarios" rows="8" cols="40"></textarea>
+
+        <br>
+        <input type="checkbox" name="tyc" value="">Acepto los términos y condiciones
+        <br>
+
+        <div class="div">
+          <button type="submit" name="button">Ingresar</button>
+          <button type="reset" name="button">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

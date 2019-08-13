@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header> <!-- Caja de arriba -->
+      <a class="logo" href="home-craftsy.html"><img src="img/logo.png" alt="Logo"></a>
+      <ul class="left">
+        <li><a href="#">SMARTPHONES</a></li>
+        <li><a href="#">TABLETS</a></li>
+        <li><a href="#">COMPUTADORAS</a></li>
+      </ul>
+      <ul class="right">
+        <li><a href="login-craftsy.html">LOG IN</a></li>
+        <li><a href="registro-craftsy.html">REGISTRO</a></li>
+      </ul>
+    </header>
+    <div class="container login">
+      <h1>BIENVENIDO</h1>
+      <form class="form" action="login-craftsy.html" method="post">
+        <br>
+        <div class="divs">
+          <label class="labels" for="email">Email</label>
+          <br>
+          <input class="inputs" type="email" name="email" value="" placeholder="Email" required id="email">
+        </div>
+        <div class="divs">
+          <label class="labels" for="password">Contraseña</label>
+          <br>
+          <input class="inputs" type="password" name="password" value="" placeholder="password" required id="password">
+        </div>
+        <p id="p-reminder">
+          <input type="checkbox" name="recordar" value="recordar">Recordarme
+        </p>
+        <br>
+        <p class="texto">La combinación de email y contraseña ingresada no es válida.</p>
+        <button type="reset" name="button">Ingresar</button>
+      </form>
+    </div>
+  </body>
+</html>
