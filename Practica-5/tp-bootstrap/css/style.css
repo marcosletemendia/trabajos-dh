@@ -8,5 +8,41 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.navbar {
+  background-color: #2C3E50;
+}
+
+header {
+  background-color: #18bc9c;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.separator {
+  position: relative;
+}
+
+hr {
+  border-top: 2px solid white;
+  width: 200px;
+}
+
+.fa-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  background-color: #18bc9c;
+}
+
+.text-center p {
+  color: white;
 }
