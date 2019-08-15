@@ -3,93 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/8fa0096761.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8fa0096761.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
 
 
   <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#">Freelance Portfolio</a>
+        <ul>
+          <li class="float-left ml-2"><a href="#">Portfolio</a></li>
+          <li class="float-left ml-2"><a href="#">About</a></li>
+          <li class="float-left ml-2"><a href="#">Contact</a></li>
+        </ul>
+        <button type="button" class="btn btn-success d-md-none"name="button">Menu <i class="fa-bars fas"></i></button>
+      </div>
+    </nav>
 
-    <div class="container">
-
-      <!-- HEADER -->
-
-      <header class="">
-        FREELANCE PORTFOLIO
-        <nav class="navbar">
-          <ul>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class=""> <!-- INTRO -->
-        <img src="html/images/profile.png" alt="image">
-        <h1>Freelance Portfolio</h1>
-        <i class="fal fa-horizontal-rule"></i>
+    <header>
+      <div class="container">
+        <img src="html/images/profile.png" alt="">
+        <h1 class="my-4">Freelance Portfolio</h1>
+        <div class="separator">
+          <hr>
+        </div>
         <i class="fas fa-star"></i>
-        <i class="fal fa-horizontal-rule"></i>
-        <i class="fad fa-horizontal-rule"></i>
-        <!-- Font Awesome -->
         <p>Web Developer - Graphic Artist - User Experience Designer</p>
-      </section>
+      </div>
+    </header>
 
-      <section class=""> <!-- PORTFOLIO -->
-        <h2>PORTFOLIO</h2>
-        <!-- Font Awesome -->
-        <img src="html/images/cabin.png" alt="cabin">
-        <img src="html/images/cake.png" alt="cake">
-        <img src="html/images/circus.png" alt="circus">
-        <img src="html/images/game.png" alt="game">
-        <img src="html/images/cabin.png" alt="cabin">
-        <img src="html/images/safe.png" alt="safe">
-        <img src="html/images/submarine.png" alt="submarine">
-      </section>
-
-      <section class=""> <!-- ABOUT -->
-        <h2>ABOUT</h2>
-        <!-- Font Awesome -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <!-- BUTTON -->
-      </section>
-
-      <section class=""> <!-- CONTACT ME -->
-        <h2>CONTACT ME</h2>
-        <!-- Font Awesome -->
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </section>
-
-      <section class=""> <!-- LOCATION -->
-
-      </section>
-
-
-    </div>
+    <section class="content portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="separator">
+          <hr>
+        </div>
+        <i class="fas fa-star"></i>
+        <div class="row">
+          <article class="col-md-4">
+            <img src="html/images/cabin.png" alt="">
+          </article>
+          <article class="col-md-4">
+            <img src="html/images/cake.png" alt="">
+          </article>
+          <article class="col-md-4">
+            <img src="html/images/circus.png" alt="">
+          </article>
+          <article class="col-md-4">
+            <img src="html/images/game.png" alt="">
+          </article>
+          <article class="col-md-4">
+            <img src="html/images/safe.png" alt="">
+          </article>
+          <article class="col-md-4">
+            <img src="html/images/submarine.png" alt="">
+          </article>
+        </div>
+      </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

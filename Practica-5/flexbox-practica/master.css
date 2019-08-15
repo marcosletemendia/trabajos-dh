@@ -1,0 +1,67 @@
+/* Reseteos generales */
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Estilos Generales */
+
+body {
+  background-image: url(html/bg-body.png);
+}
+
+.container {
+  border: solid 1px #dcdcdc;
+  padding: 20px;
+}
+
+/* Cards */
+
+.card {
+  background-color: white;
+  padding: 30px;
+}
+
+.card-image {
+  text-align: center;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 13px 3px #ccc;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-media a {
+  color: white;
+  padding: 20px;
+  background-color: #3c8dbc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
