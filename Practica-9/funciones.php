@@ -23,12 +23,12 @@ function validarRegistro($datos){
   // EMAIL
   if (strlen($datosFinales["email"])==0) {
     $errores["email"]="Ingrese su email";
-  } else if (filter_var($datosFinales["email"], filter_validate_email)==false) {
+  } else if (filter_var($datosFinales["email"], FILTER_VALIDATE_EMAIL)==false) {
     $errores["email"]="Ingrese un email valido";
   }
 
   // PASSWORD
-  if (strlen($datosFinales["contraseña"])>4) {
+  if (strlen($datosFinales["contraseña"])<4) {
     $errores["contraseña"]="La contraseña debe tener por lo menos 4 caracteres";
   }
 
