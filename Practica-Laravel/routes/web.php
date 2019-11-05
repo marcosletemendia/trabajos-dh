@@ -11,6 +11,8 @@
 |
 */
 
+//CLASE 24/10
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -41,8 +43,29 @@ Route::get('/peliculas', function(){
   }
 });
 
+
+//CLASE 29/10
+
 Route::get('/actores', 'ActorController@directory');
 
 Route::get('/actor/{id}', 'ActorController@show');
 
 Route::get('/actores/buscar', 'ActorController@search');
+
+
+//CLASE 31/10
+
+Route::get('/actors/add', function(){
+  return view('actorAdd');
+});
+
+Route::post('/actors/add', 'ActorController@store');
+
+Route::get('/actor/{id}/edit', function(){
+  return view('actorEdit');
+});
+
+Route::post('/actor/{id}/edit', 'ActorController@edit');
+
+
+// CLASE 5/11

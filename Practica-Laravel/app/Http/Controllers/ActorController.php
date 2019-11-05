@@ -8,6 +8,8 @@ use App\Actor;
 
 class ActorController extends Controller
 {
+
+    // PRACTICA 29/10
     public function directory(){
       $actores = Actor::all();
       $vac = compact("actores");
@@ -27,5 +29,26 @@ class ActorController extends Controller
         ->get();
       $vac = compact("actores");
       return view('actores', $vac);
+    }
+
+    // PRACTICA 31/10
+
+    public function store(Request $form){
+      $actorNuevo = new Actor;
+      $actorNuevo->first_name = $form['nombre'];
+      $actorNuevo->last_name = $form['apellido'];
+      $actorNuevo->rating = $form['rating'];
+      $actorNuevo->favorite_movie_id = $form['id_movie_fav'];
+      $actorNuevo->save();
+      return redirect('actores');
+    }
+
+    public function edit(){
+      $actorNuevo->first_name = $form['nombre'];
+      $actorNuevo->last_name = $form['apellido'];
+      $actorNuevo->rating = $form['rating'];
+      $actorNuevo->favorite_movie_id = $form['id_movie_fav'];
+      $actorNuevo->save();
+      return redirect('actor');
     }
 }
